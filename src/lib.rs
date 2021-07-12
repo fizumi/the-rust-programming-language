@@ -1,6 +1,6 @@
 mod front_of_house {
-    mod hosting {
-        fn add_to_waitlist() {}
+    pub mod hosting { // 公開
+        pub fn add_to_waitlist() {} // 公開
 
         fn seat_at_table() {}
     }
@@ -16,9 +16,9 @@ mod front_of_house {
 
 pub fn eat_at_restaurant() {
     // Absolute path
-    crate::front_of_house::hosting::add_to_waitlist(); // ← エラー
+    crate::front_of_house::hosting::add_to_waitlist(); // ← エラー解消
 
     // Relative path
-    front_of_house::hosting::add_to_waitlist(); // ← エラー
+    front_of_house::hosting::add_to_waitlist(); // ← エラー解消
 
 }
