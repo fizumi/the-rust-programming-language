@@ -1,5 +1,1 @@
-pub mod hosting {
-        pub fn add_to_waitlist() {}
-
-        fn seat_at_table() {}
-}
+pub mod hosting; // 公開するモジュールは、当ファイルと同名のフォルダ配下に存在する必要がある
