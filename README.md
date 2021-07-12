@@ -34,7 +34,11 @@ code restaurant
 git init
 ```
 
-### Remote-Containers
+### Remote-Container を起動する
 
 VSCode で `Remote-Containers: Reopen in Container` を実行し、`Rust`を選択する
 -> development container が作成される
+
+### Remote-Container 内で開発
+
+[数当てゲームをプログラムする](https://doc.rust-jp.rs/book-ja/ch02-00-guessing-game-tutorial.html)
