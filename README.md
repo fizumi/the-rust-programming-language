@@ -1,4 +1,4 @@
-# Programming a Guessing Game
+# The Book 7 章
 
 ## プロジェクトの作成方法
 
