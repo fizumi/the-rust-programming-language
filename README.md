@@ -1,4 +1,4 @@
-# Programming a Guessing Game
+# The Book 11 章
 
 ## プロジェクトの作成方法
 
@@ -41,4 +41,4 @@ VSCode で `Reopen in Container` を実行し、Rust を選択する
 
 ### development container 内でコードを検証
 
-[the book 11章](https://doc.rust-jp.rs/book-ja/ch11-01-writing-tests.html) を検証。
+[the book 11 章](https://doc.rust-jp.rs/book-ja/ch11-01-writing-tests.html) を検証。
