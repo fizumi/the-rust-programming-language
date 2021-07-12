@@ -1,1 +1,3 @@
-pub mod hosting; // 公開するモジュールは、当ファイルと同名のフォルダ配下に存在する必要がある
+// pub mod *; // glob は使えないようである
+pub mod hosting;
+pub mod some;
