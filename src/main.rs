@@ -1,4 +1,5 @@
 use std::io;
+use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
@@ -17,5 +18,16 @@ fn main() {
         .read_line(&mut guess)          // https://doc.rust-lang.org/std/io/struct.Stdin.html#method.read_line
         .expect("Failed to read line"); // https://doc.rust-lang.org/std/io/type.Result.html
 
+    let guess: u32 = guess // shadow
+        .trim() // https://doc.rust-lang.org/std/string/struct.String.html#method.trim（末尾の「改行」を削除）
+        .parse() // https://doc.rust-lang.org/std/primitive.str.html#method.parse
+        .expect("Please type a number!");
+
     println!("You guessed: {}", guess);
+
+    match guess.cmp(&secret_number) { // https://doc.rust-lang.org/std/cmp/trait.Ord.html#tymethod.cmp
+        Ordering::Less => println!("Too small!"),
+        Ordering::Greater => println!("Too big!"),
+        Ordering::Equal => println!("You win!"),
+    }
 }
