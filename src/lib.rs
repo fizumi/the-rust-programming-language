@@ -31,10 +31,16 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-// 'a：search関数から返されるデータはcontents引数で渡されているデータと同期間生きることをコンパイラに教える
-// contentsがテキストを全て含む引数で、合致するそのテキストの一部を返したいので、 contentsがライフタイム記法で戻り値に関連づくはずの引数であることをプログラマは知っている
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
-    vec![]
+    let mut results = Vec::new();
+
+    for line in contents.lines() {
+        if line.contains(query) {
+            results.push(line);
+        }
+    }
+
+    results
 }
 
 #[cfg(test)]
