@@ -30,3 +30,28 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 
     Ok(())
 }
+
+// 'a：search関数から返されるデータはcontents引数で渡されているデータと同期間生きることをコンパイラに教える
+// contentsがテキストを全て含む引数で、合致するそのテキストの一部を返したいので、 contentsがライフタイム記法で戻り値に関連づくはずの引数であることをプログラマは知っている
+pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+    vec![]
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn one_result() {
+        let query = "duct";
+        let contents = "\
+Rust:
+safe, fast, productive.
+Pick three.";
+
+        assert_eq!(
+            vec!["safe, fast, productive."],
+            search(query, contents)
+        );
+    }
+}
