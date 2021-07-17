@@ -1,5 +1,9 @@
 # minigrep
 
+## 学習リソース
+
+[12 章](https://doc.rust-jp.rs/book-ja/ch12-00-an-io-project.html)
+
 ## プロジェクトの作成方法
 
 ### 前提
