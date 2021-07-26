@@ -3,7 +3,7 @@
 
 # [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja)
 
-The Book 個人メモ
+The Book の復習用メモ
 
 ## コマンドライン
 
