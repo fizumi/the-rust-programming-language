@@ -1,0 +1,138 @@
+{
+        // Use IntelliSense to learn about possible attributes.
+        // Hover to view descriptions of existing attributes.
+        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+                {
+                        "type": "lldb",
+                        "request": "launch",
+                        "name": "Debug executable 'ch8_1'",
+                        "cargo": {
+                                "args": [
+                                        "build",
+                                        "--bin=ch8_1",
+                                        "--package=ch8_1"
+                                ],
+                                "filter": {
+                                        "name": "ch8_1",
+                                        "kind": "bin"
+                                }
+                        },
+                        "args": [],
+                        "cwd": "${workspaceFolder}"
+                },
+                {
+                        "type": "lldb",
+                        "request": "launch",
+                        "name": "Debug unit tests in executable 'ch8_1'",
+                        "cargo": {
+                                "args": [
+                                        "test",
+                                        "--no-run",
+                                        "--bin=ch8_1",
+                                        "--package=ch8_1"
+                                ],
+                                "filter": {
+                                        "name": "ch8_1",
+                                        "kind": "bin"
+                                }
+                        },
+                        "args": [],
+                        "cwd": "${workspaceFolder}"
+                },
+                {
+                        "type": "lldb",
+                        "request": "launch",
+                        "name": "Debug executable 'ch8_2'",
+                        "cargo": {
+                                "args": [
+                                        "build",
+                                        "--bin=ch8_2",
+                                        "--package=ch8_2"
+                                ],
+                                "filter": {
+                                        "name": "ch8_2",
+                                        "kind": "bin"
+                                }
+                        },
+                        "args": [],
+                        "cwd": "${workspaceFolder}"
+                },
+                {
+                        "type": "lldb",
+                        "request": "launch",
+                        "name": "Debug unit tests in executable 'ch8_2'",
+                        "cargo": {
+                                "args": [
+                                        "test",
+                                        "--no-run",
+                                        "--bin=ch8_2",
+                                        "--package=ch8_2"
+                                ],
+                                "filter": {
+                                        "name": "ch8_2",
+                                        "kind": "bin"
+                                }
+                        },
+                        "args": [],
+                        "cwd": "${workspaceFolder}"
+                },
+                {
+                        "type": "lldb",
+                        "request": "launch",
+                        "name": "Debug executable 'ch8_3'",
+                        "cargo": {
+                                "args": [
+                                        "build",
+                                        "--bin=ch8_3",
+                                        "--package=ch8_3"
+                                ],
+                                "filter": {
+                                        "name": "ch8_3",
+                                        "kind": "bin"
+                                }
+                        },
+                        "args": [],
+                        "cwd": "${workspaceFolder}"
+                },
+                {
+                        "type": "lldb",
+                        "request": "launch",
+                        "name": "Debug unit tests in executable 'ch8_3'",
+                        "cargo": {
+                                "args": [
+                                        "test",
+                                        "--no-run",
+                                        "--bin=ch8_3",
+                                        "--package=ch8_3"
+                                ],
+                                "filter": {
+                                        "name": "ch8_3",
+                                        "kind": "bin"
+                                }
+                        },
+                        "args": [],
+                        "cwd": "${workspaceFolder}"
+                },
+                {
+                        "type": "lldb",
+                        "request": "launch",
+                        "name": "Debug unit tests in library 'ch8_summary'",
+                        "cargo": {
+                                "args": [
+                                        "test",
+                                        "--no-run",
+                                        "--lib",
+                                        "--package=ch8_summary"
+                                ],
+                                "filter": {
+                                        "name": "ch8_summary",
+                                        "kind": "lib"
+                                }
+                        },
+                        "args": [],
+                        "cwd": "${workspaceFolder}"
+                }
+        ]
+}

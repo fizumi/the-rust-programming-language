@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "ch6_1",
+]
+
